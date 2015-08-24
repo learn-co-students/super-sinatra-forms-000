@@ -1,1 +1,33 @@
+<head>Create a Team and Heroes!</head>
 
+<form action='/teams' method="POST">
+<input type="submit" value="Submit">
+
+ <table class='table table-striped'>
+    <tr>
+  <td>Team Name</td>
+  <td><input type= "text" name="team[:name]" value= "name" /></td>
+  <td><input type= "text" name="team[:motto]" value= "motto"/></td>
+</tr>
+<tr>
+  <td>Hero 1</td>
+  <td><input type= "text" name="team[:members][:super1][:name]" value= "name" /></td>
+  <td><input type= "text" name="team[:members][:super1][:power]" value= "power"/></td>
+  <td><input type= "text" name="team[:members][:super1][:bio]" value= "biography" /></td>
+</tr>
+<tr>
+  <td>Hero 2</td>
+  <td><input type= "text" name="team[:members][:super2][:name]" value= "name" /></td>
+  <td><input type= "text" name="team[:members][:super2][:power]" value= "power"/></td>
+  <td><input type= "text" name="team[:members][:super2][:bio]" value= "biography" /></td>
+</tr>
+<tr>
+  <td>Hero 3</td>
+  <td><input type= "text" name="team[:members][:super3][:name]" value= "name" /></td>
+  <td><input type= "text" name="team[:members][:super3][:power]" value= "power"/></td>
+  <td><input type= "text" name="team[:members][:super3][:bio]" value= "biography" /></td>
+</tr>
+
+  </table>
+
+</form>
