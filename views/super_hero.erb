@@ -1,1 +1,13 @@
-
+<h1>Create a Team and Heroes!</h1>
+<form action="/teams" method="post">
+  Team name: <input name="team[name]"><br>
+  Team motto: <input name="team[motto]"><br>
+  <h3>Team members</h3>
+  <% @members_count.times do |i| %>
+    <h4>Hero <%= i+1 %>:</h4>
+    Name: <input name="team[members][][name]"><br>
+    Power: <input name="team[members][][power]"><br>
+    Bio: <input name="team[members][][bio]"><br>
+  <% end %>
+  <input type="submit" value="Submit team!">
+</form>

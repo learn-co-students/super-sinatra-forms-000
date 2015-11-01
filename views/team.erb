@@ -1,3 +1,11 @@
-
+<h1>Your team!</h1>
+<p>Name: <%= @team[:name] %></p>
+<p>Motto: <%= @team[:motto] %></p>
+<h3>Heroes!</h3>
+<% @team[:members].each do |hero| %>
+  <h4><%= hero[:name] %></h4>
+  <p>Power: <%= hero[:power] %></p>
+  <p>Bio: <%= hero[:bio] %></p>
+<% end %>
 
 
