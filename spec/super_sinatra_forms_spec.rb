@@ -21,25 +21,39 @@ describe App do
         :team => {
           :name => "Team Ruby",
           :motto => "We love Ruby!",
-          :members => {
-            :super1 => {
+          # NOTE: I rebuilt it a little in order to contain a ':members' array not hash
+          # :members => {
+          #   :super1 => {
+          #     :name => "Amanda",
+          #     :power => "Ruby",
+          #     :bio => "I love Ruby!"  
+          #   },
+          #   :super2 => {
+          #     :name => "Arel",
+          #     :power => "JavaScript",
+          #     :bio => "I love JavaScript!"  
+          #   },
+          #   :super3 => {
+          #     :name => "Katie",
+          #     :power => "Sinatra",
+          #     :bio => "I love Sinatra!"  
+          #   }
+          :members => [ 
+            { 
               :name => "Amanda",
               :power => "Ruby",
-              :bio => "I love Ruby!"  
-            },
-            :super2 => {
+              :bio => "I love Ruby!" }, 
+            { 
               :name => "Arel",
               :power => "JavaScript",
-              :bio => "I love JavaScript!"  
-            },
-            :super3 => {
+              :bio => "I love JavaScript!" }, 
+            { 
               :name => "Katie",
               :power => "Sinatra",
-              :bio => "I love Sinatra!"  
-            }
+              :bio => "I love Sinatra!" }
+            ]
           }
         }
-      }
     end
 
     it 'sends a 200 status code' do 
